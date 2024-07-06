@@ -1,0 +1,173 @@
+html {
+    background-image: url('../images/bats.gif');
+    background-repeat: repeat;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    background: white;
+    border: 3px solid black;
+    box-shadow: 8px 8px 8px 5px black;
+    
+}
+
+header {
+    background: linear-gradient(90deg, white 0%, orange 50%, black 100%);
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+header img {
+    float: left;
+    margin-right: 20px;
+}
+nav ul {
+    list-style-type: none;
+    background-color: black;
+    margin-top: 0%;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+}
+nav ul li {
+    display: inline;
+    margin-right: 45px;
+}
+aside ul li{
+    background-color: orange;
+    border: 2px black solid;
+    margin-bottom: 9px;
+    width: 110px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;   
+}
+aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+aside ul {
+    list-style-type: none;
+    padding: 0px;
+}
+aside ul li a:hover {
+    background-color: gray;
+}
+nav ul li a.Home {
+    color: orange;
+}
+nav ul li a:hover {
+    background-color: gray;
+}
+header h1, header h2 {
+    margin-left: 0px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+section {
+    flex: 1;
+}
+aside {
+    width: 120px;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px black;
+}
+header h1 {
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    margin-top: 0%;
+}
+
+header h2 {
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+main{
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+
+main h2:first-letter {
+    font-size: 2em;
+}
+
+ul {
+    /* list-style-type: none; */
+    padding-left: 30px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+main aside ul li a {
+    text-decoration: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-decoration: solid;
+    font-weight: bold;
+    color: black;
+}
+a {
+    color: orange;
+}
+footer {
+    background: linear-gradient(90deg, black 0%, orange 50%, white 100%);
+    color: black;
+    padding: 0px;
+    font-size: 0.75em;
+    text-align: center;
+    border: 3px solid black;
+    margin-top: 0px;
+}
+@media (max-width=800px) {
+    body {
+        background-image: none;
+        border: none;
+        font-size: 0.5em;
+    }
+    
+}
+@media (max-width=479px) {
+    header h1, section h2 {
+        font-size: 1em;
+    }
+}
+.special-effects h3{
+    color: orange;
+    
+}
+.special-effects h2::first-letter{
+    text-decoration: none;
+    font-size: 1em;
+
+}
+input[type="submit"]{
+    background-color: orange;
+    color: black;
+    width: 120px;
+    border: 2px solid black;
+    margin-bottom: 30px;
+    margin-left: 80px;
+
+}
+
+input[type="text"] {
+
+    width: 300px;
+}
+
