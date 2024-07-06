@@ -10,7 +10,6 @@ body {
     background: white;
     border: 3px solid black;
     box-shadow: 8px 8px 8px 5px black;
-    
 }
 
 header {
@@ -23,6 +22,7 @@ header img {
     float: left;
     margin-right: 20px;
 }
+
 nav ul {
     list-style-type: none;
     background-color: black;
@@ -30,23 +30,26 @@ nav ul {
     display: flex;
     padding-top: 10px;
     padding-bottom: 5px;
-    
 }
+
 nav ul li {
     display: inline;
     margin-right: 45px;
 }
-aside ul li{
+
+aside ul li {
     background-color: orange;
     border: 2px black solid;
     margin-bottom: 9px;
     width: 110px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px;   
+    padding: 10px;
 }
+
 aside ul li a {
     display: block;
     text-decoration: none;
@@ -54,36 +57,45 @@ aside ul li a {
     padding: 10px;
     text-align: center;
 }
+
 aside ul {
     list-style-type: none;
     padding: 0px;
 }
+
 aside ul li a:hover {
     background-color: gray;
 }
+
 nav ul li a.Home {
     color: orange;
 }
+
 nav ul li a:hover {
     background-color: gray;
 }
+
 header h1, header h2 {
     margin-left: 0px;
 }
+
 .container {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
 }
+
 section {
     flex: 1;
 }
+
 aside {
     width: 120px;
     padding: 10px;
     margin-right: 20px;
     border: 2px black;
 }
+
 header h1 {
     color: black;
     font-weight: bold;
@@ -96,7 +108,7 @@ header h2 {
     margin-top: 0px;
 }
 
-main{
+main {
     margin-top: 0px;
     padding-top: 0px;
     padding-left: 10px;
@@ -107,13 +119,13 @@ main h2:first-letter {
 }
 
 ul {
-    /* list-style-type: none; */
     padding-left: 30px;
 }
 
 ul li {
     margin-bottom: 5px;
 }
+
 main aside ul li a {
     text-decoration: none;
     margin-top: 0px;
@@ -122,9 +134,32 @@ main aside ul li a {
     font-weight: bold;
     color: black;
 }
+
 a {
     color: orange;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="Submit"] {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+}
+
 footer {
     background: linear-gradient(90deg, black 0%, orange 50%, white 100%);
     color: black;
@@ -134,40 +169,114 @@ footer {
     border: 3px solid black;
     margin-top: 0px;
 }
-@media (max-width=800px) {
+
+/* Responsive Styles */
+@media (max-width: 800px) {
     body {
+        width: 100%;
+        margin: 0;
         background-image: none;
         border: none;
-        font-size: 0.5em;
+        font-size: 0.9em;
+        box-shadow: none;
     }
-    
+
+    header {
+        font-size: 0.9em;
+    }
+
+    aside {
+        width: 100px;
+    }
 }
-@media (max-width=479px) {
-    header h1, section h2 {
+
+@media (max-width: 600px) {
+    body {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 90px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    nav ul {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    header h1, header h2 {
+        font-size: 1.2em;
+    }
+
+    aside {
+        width: 80px;
+    }
+}
+
+@media (max-width: 200px) {
+    body {
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    header h1, header h2 {
         font-size: 1em;
     }
+
+    aside {
+        width: 70px;
+    }
 }
-.special-effects h3{
+
+.special-effects h3 {
     color: orange;
-    
 }
-.special-effects h2::first-letter{
+
+.special-effects h2::first-letter {
     text-decoration: none;
     font-size: 1em;
-
 }
-input[type="submit"]{
+
+input[type="submit"] {
     background-color: orange;
     color: black;
     width: 120px;
     border: 2px solid black;
     margin-bottom: 30px;
     margin-left: 80px;
-
 }
 
 input[type="text"] {
-
     width: 300px;
 }
-
